@@ -1,6 +1,39 @@
 <mjml>
     <mj-head>
         <mj-title>Modern Email</mj-title>
+    <mj-raw>
+      <meta name="color-scheme" content="light dark">
+      <meta name="supported-color-schemes" content="light dark">
+    </mj-raw>
+    <mj-style inline="inline">
+      .dark_img {
+      display: none !important;
+      mso-hide: all !important;
+      }   
+
+      .dark_table {
+      display: none !important;
+      mso-hide: all !important;
+      }   
+
+    </mj-style>
+    <mj-style>
+        :root {
+        color-scheme: light dark;
+        supported-color-schemes: light dark;
+        }
+
+        @media (prefers-color-scheme: dark) {
+        .light_img {display: none !important;}
+
+        .dark_img {display: block !important;}
+
+        .light_table {display: none !important;}
+
+        .dark_table {display: block !important;}    
+
+        }
+    </mj-style>
         <mj-attributes>
             <mj-section padding="0px"/>
             <mj-text padding="0px" align="center" font-size="16px"/>
@@ -19,10 +52,13 @@
         <!--NAV BAR SECTION-->        
         <mj-section background-color="#ffffff" padding="10px 0">
             <mj-column width="50%" >
-                <mj-image src="https://i.imgur.com/KoetvNk.jpg" width="200px" alt="" align="center"/>
+                <mj-image css-class="light_img" src="https://i.imgur.com/KoetvNk.jpg" width="200px" alt="modern logo" align="center"/>
+        <mj-raw><!--[if !mso]><!--></mj-raw>
+            <mj-image css-class="dark_img" src="https://i.imgur.com/e6hhrBN.png" width="200px" alt="modern logo" align="center" />
+        <mj-raw><!--<![endif]--></mj-raw>
             </mj-column>
             <mj-column width="50%">
-                <mj-table align="center" width="200px">
+                <mj-table align="center" width="200px" css-class="light_table">
                     <tr>  
                         <td>
                             <a href="#"><img src="https://i.imgur.com/J6FJ06b.png" href="#" width="30px"/></a>
@@ -41,6 +77,27 @@
                         </td>
                     </tr>
                 </mj-table>
+            <mj-raw><!--[if !mso]><!--></mj-raw>
+                <mj-table align="center" width="200px" css-class="dark_table">
+                    <tr>  
+                        <td>
+                            <a href="#"><img src="https://i.imgur.com/cZvDmCe.png" href="#" width="30px"/></a>
+                        </td>
+                        <td>
+                            <a href="#"><img src="https://i.imgur.com/A17x9rj.png" href="#" width="30px" align="center"/></a>
+                        </td>
+                        <td>
+                            <a href="#"><img src="https://i.imgur.com/E9qdelz.png" href="#" width="30px" align="center"/></a>
+                        </td>
+                        <td>
+                            <a href="#"><img src="https://i.imgur.com/BrOtta0.png" href="#" width="30px" align="center"/></a>
+                        </td>
+                        <td>
+                            <a href="#"><img src="https://i.imgur.com/lyQLyxP.png" href="#" width="30px" align="center"/></a>
+                        </td>
+                    </tr>
+                </mj-table>
+            <mj-raw><!--<![endif]--></mj-raw>
             </mj-column>
         </mj-section>
         <!--HERO BACKGROUND SECTION-->
