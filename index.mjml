@@ -34,10 +34,6 @@
 
         }
     </mj-style>
-    <mj-style>
-        u + .body .gmail-screen { background:#000; mix-blend-mode:screen; }
-        u + .body .gmail-difference { background:#000; mix-blend-mode:difference; }        
-    </mj-style>
     </style>
         <mj-attributes>
             <mj-section padding="0px"/>
@@ -108,13 +104,9 @@
         <!--HERO BACKGROUND SECTION-->
         <mj-section padding="50px 20px" background-url="https://i.imgur.com/REbGuBb.png" background-size="cover" background-repeat="no-repeat">
             <mj-column width="100%">
-                <mj-text>
-                    <p style="margin:0px; padding: 20px; color:#ffffff; font-size:32px;"> 
-                    <span class="gmail-screen"><span class="gmail-difference">A Modern Design Agency</span></span>
-                    </p>
-                </mj-text>
-                <mj-text color="#ffffff" padding="40px 10px" line-height="25px">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis ex reiciendis, sint consequatur accusantium fugit!
+                <mj-text color="#ffffff">
+                    <p style="margin:0px; padding: 20px; font-size:32px;">A Modern Design Agency</p>
+                    <p style="padding:40px 10px; line-height:25px;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis ex reiciendis, sint consequatur accusantium fugit!</p>
                 </mj-text>
                 <mj-button href="#" background-color="#171a1b">
                     Get started
@@ -212,5 +204,3 @@
         </mj-section>
     </mj-body>
 </mjml>
-
-<!--https://litmus.com/community/snippets/268-keeping-white-text-white-in-gmail-dark-mode-remi-parmentier DONT WORK FOR SECTION BACKGROUND IMAGE THE LETTERS DOESNT PERMANENT IN WHITE COLOR-->
